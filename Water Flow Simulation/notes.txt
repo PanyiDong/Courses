@@ -1,0 +1,15 @@
+approximation approach, finite volume scheme: 1. conservative quantities are cell-centered, as usual for finite volume scheme; 2. the source term(bottome topography) are upwinded at the cell interfaces.
+
+# Mhalf indicate function
+def Mhalfindic(indicator, xi, mu, h) :
+    if (indicator == '+-') :
+        return Min(xi, mu, h)#indicator + Mhalf('+', xi, mu, h)#indicator
+    elif (indicator == '-+') :
+        return Min(xi, mu, h)#indicator + Mhalf('-', xi, mu, h)#indicator
+
+# Mhalf function
+def Mhalf(indicator, xi, mu, h) :
+    if (indicator == '+') :
+        return Min(-xi, mu, h)#indicator + Min(-sqrt(xi ** 2 - 2 * g * deltaW('+', mu, h)))#indicator
+    elif (indicator == '-') :
+        return Min(-xi, mu, h)#indicator + Min(sqrt(xi ** 2 - 2 * g * deltaW('+', mu, h)))#indicator
