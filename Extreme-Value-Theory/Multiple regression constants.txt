@@ -1,0 +1,9 @@
+The multiple regression constants of alpha is
+[ 1.71359597e+02 -6.52853331e-05  6.52602785e-12 -3.28351062e-03
+ -4.59656238e-03  7.55198727e-03]
+The multiple regression constants of kappa is
+[ 3.92923236e+00 -1.60312848e-06  1.56112250e-13  1.41953484e-04
+  1.79773448e-04 -1.39290308e-04]
+The multiple regression constants of threshold is
+[ 1.31185109e+02 -4.91218603e-05  4.96191172e-12 -2.58139589e-03
+ -2.60945962e-03  8.20627152e-03]
