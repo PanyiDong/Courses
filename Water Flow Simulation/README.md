@@ -1,1 +1,7 @@
 # This is for 2D water flow simulation project.
+
+The idea of this project is to apply extreme precipitation predicted in extreme precipitation prediction project and to simulate 2D water flow using Shallow Water Equations/St. Venant Equations. By thus, we can to some extent predict where and at what level will the flood occurs. Then, we can possibly develop a more accurate flood insurance product or advice the neighborhoods to raise the awareness for protecting themselves against floods.
+
+However, though the coding part has been completed, the runtime of the simulation is far beyond my estimation. This dynamic method employs dynamic steps which depends of the water flow, which means it will becomes slower and slower as the height of the water flow becomes larger and becomes stable when the water flow becomes stable. For every step, it takes about 1 minute to calculate all integrals, but every step only counts 10^-5 seconds(not the slowest step yet), which makes it almost impossbile to finish the simulation. If constant time step is applied, the simulation becomes too fast where negative water height occurs(which is not possible in reality).
+
+Moreover, for the simulation to actually mean something, a much more accurate/detailed geogrphic, topographic and possibly other maps(like sun radiation map, water flow map, etc.) are required. And it's difficult to 1) calculate at this detailed level, 2) maintain such large database. So no additional improvement is made for the project.
